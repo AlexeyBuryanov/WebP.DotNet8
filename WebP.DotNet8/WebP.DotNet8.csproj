@@ -1,0 +1,51 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net8.0-ios</TargetFramework>
+        <ImplicitUsings>true</ImplicitUsings>
+        <IsBindingProject>true</IsBindingProject>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <AssemblyName>WebP.DotNet8</AssemblyName>
+        <RootNamespace>WebP.DotNet8</RootNamespace>
+        <PackageId>WebP.DotNet8</PackageId>
+        <PackageProjectUrl>https://github.com/AlexeyBuryanov/WebP.DotNet8</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/AlexeyBuryanov/WebP.DotNet8</RepositoryUrl>
+        <Description>Port for .NET 8.</Description>
+        <Version>1.0.0</Version>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Authors>Oleksii Burianov</Authors>
+        <NeutralLanguage>en-US</NeutralLanguage>
+        <PackageTags>net8-ios;ios;webptouch</PackageTags>
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <None Include="..\LICENSE">
+        <Pack>True</Pack>
+        <PackagePath>\</PackagePath>
+      </None>
+      <None Include="..\README.md">
+        <Pack>True</Pack>
+        <PackagePath>\</PackagePath>
+      </None>
+    </ItemGroup>
+
+    <ItemGroup>
+        <ObjcBindingApiDefinition Include="ApiDefinition.cs" />
+        <ObjcBindingCoreSource Include="StructsAndEnums.cs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <NativeReference Include="libWebPWrapper.a">
+        <Kind>Static</Kind>
+        <SmartLink>False</SmartLink>
+        <ForcleLoad>True</ForcleLoad>
+      </NativeReference>
+
+      <NativeReference Include="WebP.a">
+        <Kind>Static</Kind>
+        <SmartLink>True</SmartLink>
+        <ForcleLoad>True</ForcleLoad>
+      </NativeReference>
+    </ItemGroup>
+</Project>
