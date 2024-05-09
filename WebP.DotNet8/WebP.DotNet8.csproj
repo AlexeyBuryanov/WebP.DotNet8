@@ -6,7 +6,7 @@
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
         <AssemblyName>WebP.DotNet8</AssemblyName>
         <RootNamespace>WebP.DotNet8</RootNamespace>
-        <PackageId>WebP.DotNet8</PackageId>
+        <PackageId>WebPTouch.NET8</PackageId>
         <PackageProjectUrl>https://github.com/AlexeyBuryanov/WebP.DotNet8</PackageProjectUrl>
         <RepositoryUrl>https://github.com/AlexeyBuryanov/WebP.DotNet8</RepositoryUrl>
         <Description>Port for .NET 8.</Description>
