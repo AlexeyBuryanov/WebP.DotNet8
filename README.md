@@ -1,3 +1,3 @@
 # WebP.Touch .NET 8 
 
-NuGet: [![Static Badge](https://img.shields.io/badge/WebP.DotNet8-latest-blue)](https://www.nuget.org/packages/WebPTouch.NET8/)
+[![Static Badge](https://img.shields.io/badge/NuGet-v1.0.0-blue)](https://www.nuget.org/packages/WebPTouch.NET8/)
